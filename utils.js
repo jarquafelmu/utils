@@ -7,14 +7,14 @@ const toNumber = function (str) {
 }
 
 /**
- * Compares two numbers.
+ * Compares two objects.
  * If a is less than b returns -1.
  * If a is greater than b, returns 1.
  * If a and b are equal, returns 0.
- * @param {number} a the first number
- * @param {number} b the second number
+ * @param {*} a the first object
+ * @param {*} b the second object
  */
-const compareNumbers = function (a, b) {
+const compare = function (a, b) {
     if (a < b) return -1;
     if (a > b) return 1;
     return 0;
@@ -29,7 +29,7 @@ const prettyPrint = function (num) {
 }
 
 /**
- * Returns a number between the min and max range
+ * Returns a number between the min and max range.
  * @param {number} min the smallest number
  * @param {number} max the largest number
  */
